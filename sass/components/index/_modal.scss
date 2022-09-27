@@ -1,0 +1,242 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition: opacity 250ms $transition-timing-function;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  padding: 40px;
+  transition: transform 250ms $transition-timing-function 100ms;
+  background-color: var(--main-bgcolor);
+  z-index: 100;
+}
+.modal__icon {
+  transition: fill 250ms $transition-timing-function 100ms;
+}
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #000000;
+  background: none;
+
+  cursor: pointer;
+}
+.modal__close {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.backdrop.is-hidden {
+  .modal {
+    transform: rotateY(45deg);
+  }
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  color: var(--hcolor);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.registration__lable {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 14px;
+}
+.registration__field {
+  position: relative;
+  margin-bottom: 10px;
+}
+.registration__input {
+  display: block;
+  width: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  z-index: 100;
+  padding-left: 40px;
+
+  transition: border 250ms $transition-timing-function;
+
+  font-size: 12px;
+  line-height: 14px;
+}
+.registration__input {
+  &:hover,
+  &:focus {
+    outline: 0;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+  }
+}
+.registration__input {
+  &:hover + .registration__icon,
+  &:focus + .registration__icon {
+    fill: var(--accent-color);
+  }
+}
+.registration__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: fill 250ms $transition-timing-function;
+}
+
+.registration__comment {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+
+  padding: 12px 16px;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border 250ms $transition-timing-function;
+
+  font-size: 12px;
+  line-height: 14px;
+}
+.registration__comment {
+  &:hover,
+  &:focus {
+    outline: 0;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+  }
+}
+.privacy__link {
+  color: var(--accent-color);
+
+  transition: text-decoration 250ms $transition-timing-function;
+}
+.privacy__link {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+.privacy__button {
+  background-color: var(--accent-color);
+  color: var(--main-bgcolor);
+
+  margin: 30px auto 0;
+  padding: 10px 52px;
+  width: 200px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  border: 0px;
+
+  cursor: pointer;
+
+  transition: background-color 250ms $transition-timing-function;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+.privacy__button {
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-color);
+  }
+}
+.privacy__label {
+  width: 100%;
+  cursor: pointer;
+}
+.privacy {
+  position: relative;
+
+  text-align: center;
+}
+
+.privacy__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.privacy__icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  width: 16px;
+  height: 15px;
+
+  transition: opasity 250ms $transition-timing-function;
+}
+.privacy__checkbox--checked {
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  border: 2px solid var(--hcolor);
+  border-radius: 2px;
+}
+
+.privacy__checkbox {
+  &:hover ~ .privacy__checkbox--checked,
+  &:focus ~ .privacy__checkbox--checked {
+    border-color: var(--accent-color);
+  }
+}
+.privacy__checkbox {
+  &:checked ~ .privacy__checkbox--checked {
+    opacity: 1;
+  }
+  &:checked ~ .privacy__icon {
+    opacity: 1;
+  }
+  & ~ .privacy__icon {
+    opacity: 0;
+  }
+}

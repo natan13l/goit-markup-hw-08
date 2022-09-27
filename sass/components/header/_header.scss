@@ -1,0 +1,196 @@
+
+
+
+
+
+.header-nav,
+.header,
+.div-head {
+  display: flex;
+}
+.header {
+
+  border-bottom: 1px solid #ececec;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.div-head {
+  align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.head-menu {
+  display: none;
+}
+.nav-contact {
+  display: none;
+}
+.header-mobile {
+
+
+padding: 0;
+line-height: 0;
+
+border: 0;
+background-color: transparent;
+}
+
+.header-nav__logo {
+  color: #000000;
+}
+.header-nav__logo {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.header-nav__logo--blue {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+.header-mobile {
+  display: none;
+}
+
+.head-menu {
+  display: flex;
+  align-items: center;
+}
+.nav-contact {
+  display: block;
+  text-align: left;
+}
+
+.head-menu__item:not(:last-child),
+.nav-contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+.head-menu {
+  align-items: center;
+  margin-left: 93px;
+}
+.div-head {
+  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-menu {
+  align-items: center;
+  margin-left: 87px;
+}
+
+.head-menu__item {
+  align-items: center;
+}
+.nav-contact__link {
+  display: flex;
+  align-items: center;
+  color: var(--pcolor);
+}
+
+.head-menu__link {
+  color: rgb(255, 255, 255);
+}
+.head-menu__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+
+.nav-contact__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.nav-contact__link {
+  &:hover .nav-contact__icon,
+  &:focus .nav-contact__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.head-menu__link {
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.head-menu__link,
+.nav-contact__link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $transition-timing-function;
+}
+.head-menu__link {
+  line-height: 1.14;
+}
+.nav-contact__link {
+  line-height: 1.14;
+}
+.head-menu__link,
+.skills__title,
+.card-orient__description {
+  color: var(--hcolor);
+  font-size: 14px;
+}
+
+.head-menu__item {
+  .head-menu__link--current {
+    position: relative;
+    color: var(--accent-color);
+  }
+  .head-menu__link--current {
+    &::after {
+      position: absolute;
+      content: "";
+
+      display: block;
+
+      background-color: rgba(33, 150, 243, 1);
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+
+      margin-top: 28px;
+    }
+  }
+}
+.nav-contact__icon {
+  fill: var(--pcolor);
+  margin-right: 10px;
+
+  transition: fill 250ms $transition-timing-function;
+}
+.nav-contact {
+  align-items: center;
+  margin-left: 96px;
+}
+
+
+}
+
+
+@media screen and (min-width: 1200px) { 
+
+.nav-contact {
+  display: flex;
+  text-align: left;
+}
+
+.div-head {
+  justify-content: space-between;
+}
+
+}
+

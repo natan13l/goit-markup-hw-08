@@ -1,0 +1,31 @@
+//basic style
+
+@import 'utils/variables';
+@import 'utils/scss-var';
+@import 'base/base';
+@import 'components/container';
+ 
+//header component
+
+@import 'components/header/header';
+
+// main page
+
+@import 'components/index/skills';
+@import 'components/index/work';
+@import 'components/index/team';
+@import 'components/index/social';
+@import 'components/index/clients';
+@import 'components/index/modal';
+@import 'components/index/promo';
+
+//portfolio page
+
+@import 'components/portfolio/filter';
+
+
+//foot component
+
+@import 'components/foot/footer';
+@import 'components/foot/singin';
+@import 'components/foot/subskribers';

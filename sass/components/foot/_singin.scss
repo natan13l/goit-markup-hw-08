@@ -1,0 +1,49 @@
+.singin__tittle {
+  margin-bottom: 20px;
+  text-align: left;
+  color: var(--main-bgcolor);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.singin {
+  margin-left: 70px;
+}
+
+.singin__list {
+  display: flex;
+}
+.singin__link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  flex-basis: calc((100% - 30px) / 4);
+
+  transition: fill 250ms $transition-timing-function,
+    background-color 250ms $transition-timing-function;
+}
+.singin__logo:not(:last-child) {
+  margin-right: 10px;
+}
+.singin__icon {
+  fill: var(--main-bgcolor);
+
+  margin: 12px 12px;
+  transition: fill 250ms $transition-timing-function;
+}
+.singin__link {
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.singin__link {
+  &:hover .singin__icon,
+  &:focus .singin__icon {
+    fill: var(--main-bgcolor);
+  }
+}
