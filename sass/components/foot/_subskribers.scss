@@ -122,5 +122,13 @@ align-items: center;
 .subscribers__form {
   margin-left: 93px;
 }
-
+.subscribers__desktop-flex {
+  display: flex;
+}
+.subscribers__input {
+  width: 350px;
+}
+.subscribers__label {
+  text-align: left;
+}
 }
