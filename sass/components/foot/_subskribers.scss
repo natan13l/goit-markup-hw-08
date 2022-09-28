@@ -1,23 +1,45 @@
-/* sing-form footer  */
 
-.subscribers {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
-  width: 570px;
-}
+
+ /* sing-form footer  */
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 767px) {
+// .subscribers__form {
+//   //  display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//        flex-direction: column;
+    
+// }
+// }
+// .subscribers {
+// display: flex;
+//  align-items: flex-end;
+//   margin-left: auto;
+//   width: 570px;
+// }
 .subscribers {
   .subscribers__form {
-    display: flex;
+    // display: flex;
 
-    align-items: flex-end;
-    justify-content: center;
+    // align-items: flex-end;
+    // justify-content: center;
+width: 100%;
+    text-align: center;
+align-items: center;
+    margin-top: 60px;
   }
 }
 .subscribers__label {
   display: block;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: var(--main-bgcolor);
   font-weight: 700;
   line-height: 16px;
@@ -35,7 +57,8 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
+  
 
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -84,6 +107,20 @@
   fill: var(--main-bgcolor);
 }
 .subscribers__button {
-  display: flex;
+  // display: flex;
   cursor: pointer;
+
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+.subscribers__form {
+  margin-left: 93px;
+}
+
 }
