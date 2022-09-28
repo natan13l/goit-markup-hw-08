@@ -32,7 +32,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header-mobile"><svg width="40px" height="40px">
+      <button type="button" class="header-mobile" data-menu-open><svg width="40px" height="40px">
         <use href="./images/symbol-defs.svg#icon-burger"></use>
       </svg></button>
       <ul class="list nav-contact">
@@ -48,6 +48,29 @@
         </li>
       </ul>
 
+    </div>
+    <div class="mobile" data-menu>
+      <button class="mobile__close">
+        <svg class="mobile__icon-close" width="40" height="40">
+          <use href="/images/symbol-defs.svg#icon-close"></use>
+        </svg>
+
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Студія</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Портфолiо</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">+380961111111</a></li>
+        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
+        <li class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a></li>
+      </ul>
     </div>
   </header>
 
@@ -539,7 +562,13 @@
   </div>
 
   <!-- Підключені скрипти -->
-
+ <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 
 </body>
