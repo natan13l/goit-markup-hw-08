@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero/Hero-s.jpg);
+    url(./images/hero/Hero-s.jpg);
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-      url(/images/hero/Hero-s@2x.jpg);
+      url(./images/hero/Hero-s@2x.jpg);
   }
 }
 
@@ -79,7 +79,7 @@ padding-top: 200px;
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-      url(/images/hero/Hero-m.jpg);
+      url(./images/hero/Hero-m.jpg);
   }
 }
 
@@ -91,7 +91,7 @@ padding-top: 200px;
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-      url(/images/hero/Hero-m@2x.jpg);
+      url(./images/hero/Hero-m@2x.jpg);
   }
 }
 
@@ -100,7 +100,7 @@ padding-top: 200px;
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-      url(/images/hero/Hero-l.jpg);
+      url(./images/hero/Hero-l.jpg);
   }
 }
 
@@ -112,6 +112,6 @@ padding-top: 200px;
     background-image: linear-gradient(to right,
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)),
-      url(/images/hero/Hero-l@2x.jpg);
+      url(./images/hero/Hero-l@2x.jpg);
   }
 }
