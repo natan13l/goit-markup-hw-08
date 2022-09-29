@@ -619,13 +619,32 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 100%;
   padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
   background-color: var(--main-bgcolor);
   z-index: 100;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    line-height: 30px;
+  }
+  .modal__title {
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
@@ -666,6 +685,7 @@ body {
   color: var(--hcolor);
   font-weight: 700;
   font-size: 20px;
+  text-align: center;
 }
 
 .registration__lable {
@@ -759,12 +779,18 @@ body {
 }
 
 .privacy__label {
+  position: relative;
   width: 100%;
+  display: block;
   cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 1.14;
+  padding-left: 24px;
 }
 
 .privacy {
-  position: relative;
   text-align: center;
 }
 
@@ -820,7 +846,7 @@ body {
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero-s.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-s.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
@@ -864,29 +890,29 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .promo {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero-s@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-s@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .promo {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero-m.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-m.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .promo {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero-m@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-m@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .promo {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero-l.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-l.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .promo {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/hero/Hero-l@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Hero-l@2x.jpg);
   }
 }
 .filter {
