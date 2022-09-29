@@ -213,8 +213,7 @@ body {
     line-height: 1.14;
   }
   .head-menu__link,
-.skills__title,
-.card-orient__description {
+.skills__title {
     color: var(--hcolor);
     font-size: 14px;
   }
@@ -918,9 +917,8 @@ body {
 }
 .filter {
   display: flex;
-  justify-content: baseline;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -928,12 +926,14 @@ body {
     flex-wrap: wrap;
     row-gap: 15px;
     column-gap: 8px;
-    width: 326px;
+    width: 100%;
+    max-width: 326px;
   }
 }
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 .filter__button {
@@ -976,6 +976,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
+  color: var(--hcolor);
 }
 
 .button,
