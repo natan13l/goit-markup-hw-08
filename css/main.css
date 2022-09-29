@@ -282,6 +282,7 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 999;
   }
   .mobile-container {
     display: flex;
@@ -337,7 +338,7 @@ body {
 .mobile-contacts__link {
     font-size: 24px;
     line-height: 1.18;
-    color: var(--hcolor);
+    color: var(--pcolor);
   }
   .mobile-contacts__link--blue {
     color: var(--accent-color);
@@ -917,11 +918,24 @@ body {
 }
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   margin: auto;
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .filter {
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 8px;
+    width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
 .filter__button {
   color: var(--hcolor);
   background-color: var(--ourbgcolor);
@@ -1009,10 +1023,16 @@ body {
   gap: 30px;
 }
 
-.cards__item {
-  flex-basis: calc((100% - 60px) / 3);
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 .cards__image {
   position: relative;
   display: block;

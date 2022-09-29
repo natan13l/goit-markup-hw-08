@@ -20,6 +20,10 @@
   <body>
     <header class="header">
       <div class="container div-head">
+                                <button type="button" class="mobile-open" data-menu-open><svg class="mobile-open__icon" width="40px" height="40px">
+        <use href="./images/symbol-defs.svg#icon-burger"></use>
+      </svg></button>
+
         <nav class="header-nav">
           <a class="header-nav__logo link" href="./index.html"
             ><span class="header-nav__logo--blue">Web</span>Studio</a
@@ -58,6 +62,31 @@
           </li>
         </ul>
       </div>
+       <div class="mobile" data-menu>
+      <div class="mobile-container">
+
+      <button type="button" class="mobile__close" data-menu-close>
+        <svg class="mobile__icon-close" width="40" height="40">
+          <use href="../images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="list mobile-menu">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link mobile-menu--current">Студія</a></li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолiо</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+      <ul class="list mobile-contacts">
+        <li class="mobile-contacts__item"><a href="tel:+380961111111" class="link mobile-contacts__link mobile-contacts__link--blue">+38 096 111 11 11</a></li>
+        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com" class="link mobile-contacts__link mobile-contacts__link--grey">info@devstudio.com</a></li>
+      </ul>
+      <ul class="list mobile-social">
+        <li class="mobile-social__item"><a href="" class="link mobile-social__link">Instagram</a></li>
+        <li class="mobile-social__item"><a href="" class="link mobile-social__link">Twitter</a></li>
+        <li class="mobile-social__item"><a href="" class="link mobile-social__link">Facebook</a></li>
+        <li class="mobile-social__item"><a href="" class="link mobile-social__link">LinkedIn</a></li>
+      </ul>
+    </div>
+    </div>
     </header>
     <main>
       <section class="section">
@@ -310,6 +339,7 @@
     </main>
     <footer class="foot">
       <div class="container">
+        <div class="foot__tablet-flex">
         <address class="address">
           <a class="foot__logo link" href="/index.html"
             ><span class="header-nav__logo--blue">Web</span>Studio</a
@@ -369,10 +399,12 @@
             </li>
           </ul>
         </section>
+        </div>
         <div class="subscribers">
-          <form class="form">
+          <form class="subscribers__form">
             <label class="subscribers__label" for="email"
               >Підпишіться на розсилку
+               <div class="subscribers__desktop-flex">
               <input
                 class="subscribers__input"
                 type="email"
@@ -380,6 +412,7 @@
                 placeholder="E-mail"
               />
             </label>
+            
           </form>
           <button class="subscribers__button" type="submit">
             Підписатися
@@ -387,8 +420,10 @@
               <use href="./images/symbol-defs.svg#icon-send"></use>
             </svg>
           </button>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
