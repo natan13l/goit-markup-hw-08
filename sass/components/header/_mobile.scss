@@ -73,6 +73,8 @@
   }
   .mobile-contacts {
     margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 40px;
   }
  
   .mobile-contacts__link--grey,
@@ -85,9 +87,7 @@
    {
     color: var(--accent-color);
   }
-  .mobile-contacts__link--blue {
-    font-size: 34px;
-  }
+ 
   .mobile-social {
     display: flex;
     flex-wrap: wrap;

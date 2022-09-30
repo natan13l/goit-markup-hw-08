@@ -1,13 +1,11 @@
-
-
 // .skills {
 //   display: flex;
 //   flex-wrap: wrap;
 //   gap: 30px;
 // }
-// .skills__item {
-//   flex-basis: calc((100% - 90px) / 4);
-// }
+.skills__item {
+  margin-bottom: 30px;
+}
 
 .skills__item {
   &::before {
@@ -22,33 +20,31 @@
 }
 .icon-antenna {
   &::before {
-    background-image: url(../images/SVG/antenna.svg);
+    background-image: url(./images/SVG/antenna.svg);
   }
 }
 
 .icon-clock {
   &::before {
-    background-image: url(../images/SVG/clock.svg);
+    background-image: url(./images/SVG/clock.svg);
   }
 }
 .icon-diagram {
   &::before {
-    background-image: url(../images/SVG/diagram.svg);
+    background-image: url(./images/SVG/diagram.svg);
   }
 }
 .icon-astronaut {
   &::before {
-    background-image: url(../images/SVG/astronaut.svg);
+    background-image: url(./images/SVG/astronaut.svg);
   }
 }
 .skills__title {
-  margin-top: 30px;
   margin-bottom: 10px;
- 
+
   line-height: 1.14;
   text-transform: uppercase;
 }
-
 
 .skills__title,
 .skills__txt {
@@ -88,25 +84,19 @@
   transition: fill 250ms $transition-timing-function;
 }
 
- @media screen and (min-width: 768px){
-
-
+@media screen and (min-width: 768px) {
   .skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.skills__item {
-  flex-basis: calc((100% - 90px) / 2);
-}
-
- }
-
-
- @media screen and (min-width: 1200px){
-
-.skills__item {
-  flex-basis: calc((100% - 90px) / 4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .skills__item {
+    flex-basis: calc((100% - 90px) / 2);
+  }
 }
 
- }
+@media screen and (min-width: 1200px) {
+  .skills__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}

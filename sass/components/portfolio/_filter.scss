@@ -2,7 +2,7 @@
   display: flex;
 
   margin: auto;
-  margin-bottom: 40px;
+
 }
   @media screen and (max-width:767px) {
     .filter {
@@ -54,9 +54,7 @@
     border-radius: 4px;
   }
 }
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 
 .skills__title,
 .card-orient__description {
@@ -87,7 +85,7 @@
 }
 .subtitle {
   color: var(--hcolor);
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -119,7 +117,9 @@
 }
 @media screen  and (min-width: 1200px) {
   
-
+.subtitle {
+  font-size: 36px;
+}
 .cards__item {
   flex-basis: calc((100% - 60px) / 3);
 }
