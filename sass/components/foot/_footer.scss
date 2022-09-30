@@ -57,6 +57,7 @@ margin-bottom: 60px;
 //   margin-bottom: 10px;
 // }
 .address__map {
+  display: block;
   color: rgb(255, 255, 255);
   line-height: 1.71;
   transition: color 250ms $transition-timing-function;
