@@ -3,8 +3,13 @@
 //   flex-wrap: wrap;
 //   gap: 30px;
 // }
-.skills__item {
+@media screen and (max-width: 767px) {
+.skills__item:not(:last-child) {
   margin-bottom: 30px;
+} 
+.skills__title {
+  text-align: center;
+}
 }
 
 .skills__item {
@@ -16,6 +21,7 @@
     background-color: #f5f4fa;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 30px;
   }
 }
 .icon-antenna {
@@ -91,7 +97,8 @@
     gap: 30px;
   }
   .skills__item {
-    flex-basis: calc((100% - 90px) / 2);
+    
+     flex-basis: calc((100% - 30px)/2);
   }
 }
 

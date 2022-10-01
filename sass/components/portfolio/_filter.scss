@@ -10,7 +10,7 @@
     row-gap: 15px;
     column-gap: 8px;
     width: 100%;
-    max-width: 326px;
+  margin-bottom: 40px;
   } }
   @media screen  and (min-width: 768px) {
     .filter {
@@ -18,9 +18,7 @@
           margin-bottom: 30px;
     }
   }
-  @media screen and (min_width: 1200px) {
-    
-  }
+ 
 .filter__button {
   color: var(--hcolor);
   background-color: var(--ourbgcolor);
@@ -97,7 +95,9 @@
 }
 
 .cards__link {
-  display: block;
+ display: flex; 
+ flex-direction: column; 
+ height: 100%;
 
   transition: box-shadow 250ms $transition-timing-function;
 }
@@ -119,6 +119,7 @@
   
 .subtitle {
   font-size: 36px;
+  margin-bottom: 50px;
 }
 .cards__item {
   flex-basis: calc((100% - 60px) / 3);
@@ -130,6 +131,11 @@
 
   }
 
+}
+@media screen and (max-width:1199px) {
+  .subtitle {
+    margin-bottom: 30px;
+  }
 }
 .cards__image {
   position: relative;
@@ -144,6 +150,7 @@
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-bottom: 1px solid rgba(238, 238, 238, 1);
+  flex-grow: 1;
 }
 .card-overlay {
   position: absolute;

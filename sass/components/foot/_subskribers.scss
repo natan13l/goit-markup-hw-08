@@ -46,9 +46,7 @@ align-items: center;
 
   
 }
-.foot__tablet-flex {
-  margin-bottom: 60px;
-}
+
 .subscribers__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -58,7 +56,6 @@ align-items: center;
     rgba(33, 150, 243, 0)
   );
 
- 
 
   padding-top: 15px;
   padding-bottom: 15px;
@@ -72,6 +69,8 @@ align-items: center;
 
   transition: border 250ms $transition-timing-function;
 }
+
+
 .subscribers__input {
   &:hover,
   &:focus {
@@ -119,7 +118,11 @@ align-items: center;
 
   margin-top: 20px;
 }
-
+@media screen and (max-width:767px) {
+   .subscribers__desktop-flex {
+  margin-top: 20px;
+}
+}
 @media screen and (min-width: 768px) {
   .subscribers__input {
 margin-top: 20px;
