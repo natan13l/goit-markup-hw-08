@@ -32,6 +32,9 @@ img {
   clip-path: inset(100%);
   margin: -1px;
 }
+.no-scroll {
+  overflow:hidden;
+} 
 .list {
   list-style: none;
 }
